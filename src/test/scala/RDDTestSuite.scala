@@ -2,11 +2,11 @@ import org.apache.spark.SparkContext
 import org.apache.spark.rdd.RDD
 import org.junit.Assert.assertTrue
 import org.junit.Test
-import utils.Spark
+import utils.SparkUtil
 
 class RDDTestSuite {
 
-  val sc: SparkContext = Spark.getSparkContext
+  val sc: SparkContext = SparkUtil.getSparkContext
 
   val as = List(
     (101, ("Ruetli", "AG")),
