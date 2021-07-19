@@ -1,0 +1,7 @@
+#folders
+.bsp
+.idea
+**/target/**
+
+# files
+build.properties
