@@ -40,13 +40,15 @@ object Euro2020Data {
 
   private[euro2020] def parse(line: String): Euro2020Article = {
     val chunks = line.split(",")
-    Euro2020Article(chunks(0),
-      chunks(1),
-      chunks(2),
-      chunks(3),
-      chunks(4),
-      chunks(5),
-      chunks(6),
+    def getString(idx: Int) = chunks(idx).trim
+
+    Euro2020Article(getString(0),
+      getString(1),
+      getString(2),
+      getString(3),
+      getString(4),
+      getString(5),
+      getString(6),
       chunks(7).toInt,
       chunks(8).toInt
     )
